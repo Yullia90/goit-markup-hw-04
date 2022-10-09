@@ -219,7 +219,7 @@ address {
 }
 
 .quality-item {
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
 }
 .quality-picture {
   width: 270px;
@@ -229,10 +229,9 @@ address {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
 }
 .quality-icon {
-  width: 270px;
-  height: 120px;
 }
 .quality-title {
   font-size: 14px;
@@ -363,16 +362,14 @@ address {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   color: #afb1b8;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-logo:hover,
+.clients-logo:focus {
   color: var(--accent);
   border: 1px solid #2196f3;
 }
@@ -473,12 +470,6 @@ address {
   justify-content: center;
 }*/
 
-.footer-network-icon:hover,
-.footer-network-icon:focus {
-  border-radius: 50%;
-  background-color: var(--accent);
-}
-
 .footer-network-icon-link {
   display: flex;
   align-items: center;
@@ -488,6 +479,11 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+.footer-network-icon-link:hover,
+.footer-network-icon-link:focus {
+  border-radius: 50%;
+  background-color: var(--accent);
 }
 
 .network-icon {
